@@ -1,116 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="quantity.css">
 </head>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/javascript.js"></script>
     <script src="./js/quantity.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
-    
+
     <div class="container text-center">
         <h1 class="display-3 mb-5">Menu - Faça A Sua Escolha</h1>
         <h1 class="display-5">Prato Principal</h1>
         <p>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</p>
-        <div class="row">
-            <div class="col">
-                <object class="img" data="./assets/bife.jpg" type="image/jpg" width="150"></object> <!--194/259-->
-                <p>Bife com batata</p>
-                <p class="price" name="price" id="1"></p>
-                <div class="quantity buttons_added">
-                    <input type="button" value="-" class="minus">
-                    <input type="number"
-                            step="1" min="0" max=""
-                            name="quantity" id="1"
-                            value="0" title="Qty"
-                            class="input-text qty text" size="4"
-                            pattern="" inputmode="">
-                    <input type="button" value="+" class="plus">
+        <div class="row justify-content-center mb-5 gap-5">
+            <div class="card p-0 shadow-lg" style="width: 18rem;">
+                <img src="./assets/bife.jpg" class="card-img-top" alt="Imagem de um bife com Batata">
+                <div class="card-body">
+                    <h5 class="card-title">Bife com batata</h5>
+                    <p class="card-text" name="price" id="1"></p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity" id="1" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <object class="img" data="./assets/coxa.jpg" type="image/jpg" width="150"></object>
-                <p>Coxa de frango Crocante</p>
-                <p class="price" name="price" id="2"></p>
-                <div class="quantity buttons_added">
-                    <input type="button" value="-" class="minus">
-                    <input type="number"
-                            step="1" min="0" max=""
-                            name="quantity"  id="2"
-                            value="0" title="Qty"
-                            class="input-text qty text" size="4"
-                            pattern="" inputmode="">
-                    <input type="button" value="+" class="plus">
+            <div class="card p-0 shadow-lg" style="width: 18rem;">
+                <img src="./assets/coxa.jpg" class="card-img-top" alt="Imagem de uma coxa de frango crocante">
+                <div class="card-body">
+                    <h5 class="card-title">Coxa de frango Crocante</h5>
+                    <p class="card-text" name="price" id="2"></p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity" id="2" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <object class="img" data="./assets/panela.jpg" type="image/jpg" width="150"></object>
-                <p>Carne de Panela</p>
-                <p class="price" name="price" id="3"></p>
-                <div class="quantity buttons_added">
-                    <input type="button" value="-" class="minus">
-                    <input type="number"
-                            step="1" min="0" max=""
-                            name="quantity"  id="3"
-                            value="0" title="Qty"
-                            class="input-text qty text" size="4"
-                            pattern="" inputmode="">
-                    <input type="button" value="+" class="plus">
+            <div class="card p-0 shadow-lg" style="width: 18rem;">
+                <img src="./assets/panela.jpg" class="card-img-top" alt="Imagem de uma Carne de Panela">
+                <div class="card-body">
+                    <h5 class="card-title">Carne de Panela</h5>
+                    <p class="card-text" name="price" id="3"></p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity" id="3" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
         </div>
         <h1 class="display-5">Acompanhamentos</h1>
         <p>Porções para uma pessoa</p>
-        <div class="row">
-            <div class="col">
-                <object class="img" data="./assets/farofa.jpg" type="image/jpg" width="150"></object>
-                <p>Farofa</p>
-                <p class="price" name="price" id="4"></p>
-                <div class="quantity buttons_added">
-                    <input type="button" value="-" class="minus">
-                    <input type="number"
-                            step="1" min="0" max=""
-                            name="quantity"  id="4"
-                            value="0" title="Qty"
-                            class="input-text qty text" size="4"
-                            pattern="" inputmode="">
-                    <input type="button" value="+" class="plus">
+        <div class="row justify-content-center mb-5 gap-5">
+            <div class="card p-0 shadow-lg" style="width: 18rem;">
+                <img src="./assets/farofa.jpg" class="card-img-top" alt="Imagem de Farofa">
+                <div class="card-body">
+                    <h5 class="card-title">Farofa</h5>
+                    <p class="card-text" name="price" id="4"></p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity" id="4" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <object class="img" data="./assets/salad.jpg" type="image/jpg" width="150"></object>
-                <p>Salada</p>
-                <p class="price" name="price" id="5"></p>
-                <div class="quantity buttons_added">
-                    <input type="button" value="-" class="minus">
-                    <input type="number"
-                            step="1" min="0" max=""
-                            name="quantity"  id="5"
-                            value="0" title="Qty"
-                            class="input-text qty text" size="4"
-                            pattern="" inputmode="">
-                    <input type="button" value="+" class="plus">
+            <div class="card p-0 shadow-lg" style="width: 18rem;">
+                <img src="./assets/salad.jpg" class="card-img-top" alt="Imagem de Salada">
+                <div class="card-body">
+                    <h5 class="card-title">Salada</h5>
+                    <p class="card-text" name="price" id="5"></p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity" id="5" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <object class="img" data="./assets/torresmo.jpg" type="image/jpg" width="150"></object>
-                <p>Torresmo</p>
-                <p class="price" name="price" id="6"></p>
-                <div class="quantity buttons_added">
-                    <input type="button" value="-" class="minus">
-                    <input type="number"
-                            step="1" min="0" max=""
-                            name="quantity"  id="6"
-                            value="0" title="Qty"
-                            class="input-text qty text" size="4"
-                            pattern="" inputmode="">
-                    <input type="button" value="+" class="plus">
+            <div class="card p-0 shadow-lg" style="width: 18rem;">
+                <img src="./assets/torresmo.jpg" class="card-img-top" alt="Imagem de Torresmo">
+                <div class="card-body">
+                    <h5 class="card-title">Torresmo</h5>
+                    <p class="card-text" name="price" id="6"></p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity" id="6" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,4 +129,5 @@
         </div>
     </div>
 </body>
+
 </html>
