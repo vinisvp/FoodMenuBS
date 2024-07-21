@@ -49,13 +49,56 @@
             </div>
         </div>
     </nav>
-    <div class="container my-5 text-center">
+    <div class="container mb-5 mt-1 text-center">
+        <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/carousel/yakisoba.jpg" class="d-block w-100" alt="imagem de um espaguete">
+                    <div class="carousel-caption bg-secondary bg-opacity-75 d-none d-lg-block">
+                        <h2>Começa o nosso cardápio</h2>
+                        <p>Comida fresca e saudável</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carousel/restaurante.jpg" class="d-block w-100" alt="imagem de varios alimentos do restaurante">
+                    <div class="carousel-caption bg-secondary bg-opacity-75 d-none d-lg-block">
+                        <h2>Faça a sua reserva</h2>
+                        <p>Confraternizações e datas especiais</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carousel/pizza.jpg" class="d-block w-100" alt="Imagem de um pizza">
+                    <div class="carousel-caption bg-secondary bg-opacity-75 d-none d-lg-block">
+                        <h2>Aproveite as nossas promoções</h2>
+                        <p>Sobremesas e bebidas grátis</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <h1 class="display-3 mb-5">Menu - Faça A Sua Escolha</h1>
         <h1 class="display-5">Prato Principal</h1>
         <p>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</p>
         <div class="row justify-content-center mb-5 gap-5">
             <div class="card p-0 shadow-lg" style="width: 18rem;">
-                <img src="./assets/bife.jpg" class="card-img-top" alt="Imagem de um bife com Batata">
+                <img src="./assets/cards/bife.jpg" class="card-img-top" alt="Imagem de um bife com Batata">
                 <div class="card-body">
                     <h5 class="card-title">Bife com batata</h5>
                     <p class="card-text" name="price" id="1"></p>
@@ -68,7 +111,7 @@
                 </div>
             </div>
             <div class="card p-0 shadow-lg" style="width: 18rem;">
-                <img src="./assets/coxa.jpg" class="card-img-top" alt="Imagem de uma coxa de frango crocante">
+                <img src="./assets/cards/coxa.jpg" class="card-img-top" alt="Imagem de uma coxa de frango crocante">
                 <div class="card-body">
                     <h5 class="card-title">Coxa de frango Crocante</h5>
                     <p class="card-text" name="price" id="2"></p>
@@ -81,7 +124,7 @@
                 </div>
             </div>
             <div class="card p-0 shadow-lg" style="width: 18rem;">
-                <img src="./assets/panela.jpg" class="card-img-top" alt="Imagem de uma Carne de Panela">
+                <img src="./assets/cards/panela.jpg" class="card-img-top" alt="Imagem de uma Carne de Panela">
                 <div class="card-body">
                     <h5 class="card-title">Carne de Panela</h5>
                     <p class="card-text" name="price" id="3"></p>
@@ -98,7 +141,7 @@
         <p>Porções para uma pessoa</p>
         <div class="row justify-content-center mb-5 gap-5">
             <div class="card p-0 shadow-lg" style="width: 18rem;">
-                <img src="./assets/farofa.jpg" class="card-img-top" alt="Imagem de Farofa">
+                <img src="./assets/cards/farofa.jpg" class="card-img-top" alt="Imagem de Farofa">
                 <div class="card-body">
                     <h5 class="card-title">Farofa</h5>
                     <p class="card-text" name="price" id="4"></p>
@@ -111,7 +154,7 @@
                 </div>
             </div>
             <div class="card p-0 shadow-lg" style="width: 18rem;">
-                <img src="./assets/salad.jpg" class="card-img-top" alt="Imagem de Salada">
+                <img src="./assets/cards/salad.jpg" class="card-img-top" alt="Imagem de Salada">
                 <div class="card-body">
                     <h5 class="card-title">Salada</h5>
                     <p class="card-text" name="price" id="5"></p>
@@ -124,7 +167,7 @@
                 </div>
             </div>
             <div class="card p-0 shadow-lg" style="width: 18rem;">
-                <img src="./assets/torresmo.jpg" class="card-img-top" alt="Imagem de Torresmo">
+                <img src="./assets/cards/torresmo.jpg" class="card-img-top" alt="Imagem de Torresmo">
                 <div class="card-body">
                     <h5 class="card-title">Torresmo</h5>
                     <p class="card-text" name="price" id="6"></p>
