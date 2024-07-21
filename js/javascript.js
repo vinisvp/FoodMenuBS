@@ -28,14 +28,30 @@ function calc(){
     var total = 0.0;
 
     result.innerHTML = "";
-    result.innerHTML += `Caro <b>${name.value}</b><br><br>Seguem os dados do seu pedido.<br><br>O Seu pedido é:<br><ul>`;
-
     for (var prod of quantities){
         if (prod.value > 0){
-            result.innerHTML += `<li>Prato: ${prods[prod.id - 1].name} - Preço unitário: ${formatter.format(prods[prod.id - 1].price)} - Quantidade: ${prod.value} - Total: ${formatter.format(prods[prod.id - 1].price * prod.value)}</li>`;
             total += prods[prod.id - 1].price * prod.value;
         }
     }
 
-    result.innerHTML += `</ul><br><h3>Preço final ${formatter.format(total)}<h3>`;
+    if (total > 0)
+    {
+        result.innerHTML += `Caro <b>${name.value}</b>
+                            <br>
+                            <br>Seguem os dados do seu pedido.<br><br>O Seu pedido é:<br>
+                            <ul>`;
+
+        for (var prod of quantities){
+            if (prod.value > 0){
+                result.innerHTML += `<li>${prods[prod.id - 1].name} - Preço: ${formatter.format(prods[prod.id - 1].price)} - Quantidade: ${prod.value} - Total: ${formatter.format(prods[prod.id - 1].price * prod.value)}</li>`;
+            }
+        }
+
+        result.innerHTML += `</ul>
+                            <br><h3>Preço final ${formatter.format(total)}<h3>`;
+    }
+    else
+    {
+        result.innerHTML = `<p class="text-center fs-3 fw-bold text-danger">Selecione pelo menos um prato</p>`
+    }
 }
